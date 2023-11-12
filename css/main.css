@@ -1,0 +1,209 @@
+body {
+    /*margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia dentro */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+}
+
+/* -------------------------------------------------- */
+/* ---------------------------------------------*/
+/* ------------------------------ */
+/* NAVEGACIÓN */
+
+header {
+    /*width - ancho /// height alto */
+    width: 100%;
+    height: 50px;
+}
+
+header nav {
+    /* Justificar a la derecha */
+    /* Nos permite utilizar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 230px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a {
+    /*Eliminar líne debajo del texto*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a {
+    color:black;
+    margin-right: 20px;
+}
+
+/*Ícono del menú*/
+nav .nav-right-section .menu{
+    /* Agregar ícono desde CSS */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuario*/
+nav .nav-right-section img{
+    /* Redondeo de bordes de la imagen */
+    border-radius: 100%;
+    /*Tamaño de la imagen */
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+}
+
+/* -------------------------------------------------- */
+/* ---------------------------------------------*/
+/* ------------------------------ */
+/* MAIN */
+
+main {
+    margin-top: 5%;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centrar absolútamente gracias a los márgenes automáticos */
+    /*Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 12%;
+    padding-bottom: 25px; 
+}
+
+main .main-input {
+    width: 525px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 530px;
+}
+
+main .main-input input{
+    height: 43px;
+    /* Quitar el borde */
+    border: none;
+    /* Quitar el borde cuando está activo el input*/
+    outline: none;
+    width: 450px;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0.8px 1.5px 1.5px 1.5px rgba(231, 231, 231, 0.92);
+}
+
+main .main-input .search-icon {
+    background-image: url(https://cdn.icon-icons.com/icons2/933/PNG/512/searching-magnifying-glass_icon-icons.com_72568.png);
+    background-size: contain; /*Contenemos el tamaño de la imagen*/
+    padding-left: 3%;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    width: 20%;
+    height: 20%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/484/512/original/google-lens-icon-logo-symbol-free-png.png) ;
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 10px;  
+}
+
+main .button-L {
+    background-color: #f5f5f5;
+    border-radius: 3%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 2%;
+    border-color: transparent;
+}
+
+main .button-R {
+    background-color: #f5f5f5;
+    border-radius: 4%;
+    padding: 10px;
+    border-color: transparent;
+    margin-top: 2%;
+}
+
+footer {
+    background-color:rgba(238, 238, 238, 0.92);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: 100%;
+    font-size: 14px;
+}
+
+footer .mexico .footer-mex {
+    width: auto;
+    height: 25px;
+    margin-left: 15px;
+}
+
+footer nav {
+    border: 1px solid rgb(198, 198, 198);
+    display: flex;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 2px;
+    height: 25px;
+}
+
+footer nav .footer-data-L {
+    margin-top: 15px;
+    margin-bottom: 13px;
+    margin-left: 2%;
+    padding-right: 45%;
+    justify-self: left;
+}
+
+footer nav .footer-data-R {
+    flex: 2;
+    justify-content: left;
+}
+
+footer ul li a {
+    color: #000000;
+    margin: 12px;
+}
+
+
+
+
+
